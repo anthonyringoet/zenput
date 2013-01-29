@@ -9,10 +9,15 @@
 (function($) {
 
   $.fn.zenput = function() {
-    var inputs = this,
+    var my = {},
+        inputs = this,
         $body = $('body');
 
-    // init:
+    my.mirror = function(give, take){
+      take.html(give.html());
+    };
+
+    // init
     // add toggle, mirror,…
     inputs.each(function(){
       var $input = $(this);
@@ -27,22 +32,32 @@
     $mirror = $mirrorWrap.find('.zenput-mirror');
     var $unfocus = $mirrorWrap.find('.zenput-unfocus');
 
+    // events
     $body.on('click', '.zenput-focus', function(){
       var $toggle = $(this),
           $input = $toggle.next();
 
+      my.activeInput =  $input;
+
       // mirror content input -> mirror
       console.log($input.html());
-      $mirror.html($input.html());
-      $mirror.html('wtf');
+      console.log($mirror);
 
+      console.log($('.focus').html());
+      my.mirror($input, $mirror);
+      // my.mirror($('.focus'), $('.zenput-mirror'));
       $mirrorWrap.toggle();
-      // show mirror on top
+      $mirror.focus();
+    });
+
+    $body.on('click', '.zenput-unfocus', function(){
+      $mirrorWrap.toggle();
+      my.activeInput.focus();
     });
 
 
     return this.each(function() {
-      $(this).html('text');
+      $(this);
     });
   };
 
