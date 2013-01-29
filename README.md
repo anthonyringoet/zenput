@@ -1,6 +1,6 @@
 # Zenput
 
-Lets your users focus on the input.
+Transform plain textarea's in full screen focused writing.
 
 ## Getting Started
 Download the [production version][min] or the [development version][max].
@@ -15,19 +15,19 @@ In your web page:
 <script src="dist/zenput.min.js"></script>
 <script>
 jQuery(function($) {
-  $.awesome(); // "awesome"
+  $('textarea').zenput(); // all textareas are affected
 });
 </script>
 ```
 
-## Documentation
-_(Coming soon)_
-
 ## Examples
-_(Coming soon)_
+Quickest way to check this out is clone the repo, pop open your terminal and in the root of the repo type:
 
-## Release History
-_(Nothing yet)_
+```
+python -m SimpleHTTPServer
+```
+
+and visit `/demo`
 
 ## License
 Copyright (c) 2013 Anthony Ringoet  

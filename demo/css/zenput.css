@@ -1,0 +1,32 @@
+.zenput-mirror-wrap,
+.zenput-unfocus{
+  position:absolute;
+}
+.zenput-mirror-wrap,
+.zenput-mirror{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.zenput-mirror-wrap{
+    z-index:600;
+    background:#ddd;
+}
+.zenput-mirror{
+  position:absolute;
+  border:none;
+  padding:1em 4em;
+  margin:0;
+  font-size:2.5em;
+  background:transparent;
+}
+.zenput-mirror:focus{
+  outline:none; /* add own focus style */
+  box-shadow:inset 0 0 10px rgba(0,0,0,0.5);
+}
+.zenput-unfocus{
+  top:2em;
+  left:2em;
+  z-index:1;
+}

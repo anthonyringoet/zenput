@@ -1,10 +1,6 @@
-/*
- * zenput
- * https://github.com/anthonyringoet/zenput
- *
- * Copyright (c) 2013 Anthony Ringoet
- * Licensed under the MIT, GPL licenses.
- */
+/*! Zenput - v0.1.0 - 2013-01-29
+* https://github.com/anthonyringoet/zenput
+* Copyright (c) 2013 Anthony Ringoet; Licensed MIT, GPL */
 
 (function($) {
 
