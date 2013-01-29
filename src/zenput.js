@@ -14,7 +14,7 @@
         $body = $('body');
 
     my.mirror = function(give, take){
-      take.html(give.html());
+      take.val(give.val());
     };
 
     // init
@@ -38,19 +38,15 @@
           $input = $toggle.next();
 
       my.activeInput =  $input;
-
-      // mirror content input -> mirror
-      console.log($input.html());
-      console.log($mirror);
-
-      console.log($('.focus').html());
       my.mirror($input, $mirror);
-      // my.mirror($('.focus'), $('.zenput-mirror'));
       $mirrorWrap.toggle();
       $mirror.focus();
     });
 
     $body.on('click', '.zenput-unfocus', function(){
+      var $toggle = $(this);
+
+      my.mirror($mirror, my.activeInput);
       $mirrorWrap.toggle();
       my.activeInput.focus();
     });
