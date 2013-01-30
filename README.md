@@ -33,10 +33,10 @@ open "http://0.0.0.0:1111/demo"; python -m SimpleHTTPServer 1111
 Hit refresh in your browser. All done!
 
 ## Possible todo's ##
-[] add config for texts inside triggers
-[] add aria roles
-[] add before and after hooks
-[] trigger custom events on (un)focus
+- [ ] add config for texts inside triggers
+- [ ] add aria roles
+- [ ] add before and after hooks
+- [ ] trigger custom events on (un)focus
 
 ## License
 Copyright (c) 2013 Anthony Ringoet  
