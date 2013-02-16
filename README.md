@@ -5,6 +5,8 @@ Transform plain textarea's in full screen focused writing.
 ## Getting Started
 Download the [production version][min] or the [development version][max].
 
+You can use this plugin with jQuery or Zepto.
+
 [min]: https://raw.github.com/anthonyringoet/zenput/master/dist/zenput.min.js
 [max]: https://raw.github.com/anthonyringoet/zenput/master/dist/zenput.js
 
